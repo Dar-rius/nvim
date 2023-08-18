@@ -3,7 +3,7 @@ Here's my Neovim configuration.
 Working on Neovim configurations takes a lot of time, but also (I admit) a lot of patience. To avoid spending a whole day working on the editor's configurations,
 i used [melkey's configurations](https://github.com/Melkeydev/NvimConfig), which largely satisfied me.
 
-Cette configuration est accompagne du manageur de plugins [Lazy.nvim](https://github.com/folke/lazy.nvim).
+This configuration is accompanied by the plugin manager [Lazy.nvim](https://github.com/folke/lazy.nvim).
 
 ![alt text](./ressources/term.png)
 
