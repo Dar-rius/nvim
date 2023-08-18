@@ -5,9 +5,11 @@ i used [melkey's configurations](https://github.com/Melkeydev/NvimConfig), which
 
 Cette configuration est accompagne du manageur de plugins [Lazy.nvim](https://github.com/folke/lazy.nvim). 
 
+![alt text](https://i.pinimg.com/564x/f0/59/dd/f059dd63d1b422aa0d088a6cf824e511.jpg)
+
 ## How to download and configure
 
-###  download
+###  Download
 
 To download the configurations, create a nvim folder in the AppData folder, then download the repository: 
 
