@@ -9,8 +9,6 @@ Cette configuration est accompagne du manageur de plugins [Lazy.nvim](https://gi
 
 ## How to download and configure
 
-### Download
-
 To download the configurations, create a nvim folder in the AppData folder, then download the repository:
 
 `git clone https:///https://github.com/Dar-rius/nvim.git`
