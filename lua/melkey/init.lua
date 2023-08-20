@@ -17,3 +17,6 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup("melkey.plugins")
+
+vim.opt.termguicolors = true
+vim.cmd.colorscheme("tokyonight")
