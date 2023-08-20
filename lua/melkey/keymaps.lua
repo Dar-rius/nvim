@@ -17,6 +17,9 @@ vim.keymap.set("n", "<leader>q", "<Cmd>bprevious<CR>", { desc = "Go to previous 
 vim.keymap.set("n", "<leader>e", "<Cmd>bnext<CR>", { desc = "Go to next buffer" })
 vim.keymap.set("n", "<leader>w", "<Cmd>bdelete<CR>", { desc = "Delete buffer" })
 
+vim.keymap.set("n", "t", "<Cmd>:ToggleTerm<CR>", { silent = true })
+vim.keymap.set("n", "m", "<Cmd>:Telescope find_files<CR>", { silent = true })
+vim.keymap.set("n", "ne", "<Cmd>:Neotree<CR>", { silent = true })
 -- Diagnostics
 -- utils.key_mapper('n', '<leader>dn', ':lua vim.diagnostic.goto_next({float={border="rounded"}})<CR>')
 -- utils.key_mapper('n', '<leader>dp', ':lua vim.diagnostic.goto_prev({float={border="rounded"}})<CR>')
