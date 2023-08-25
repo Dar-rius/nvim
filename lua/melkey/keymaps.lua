@@ -19,6 +19,7 @@ vim.keymap.set("n", "<leader>w", "<Cmd>bdelete<CR>", { desc = "Delete buffer" })
 
 --Plugins
 vim.keymap.set("n", ";", "<Cmd>:FineCmdline<CR>", { noremap = true, silent = true })
+vim.keymap.set("n", "z", "<Cmd>:LazyGit<CR>", { noremap = true, silent = true })
 vim.keymap.set("n", "t", "<Cmd>:ToggleTerm direction=float<CR>", { silent = true })
 vim.keymap.set("n", "m", "<Cmd>:Telescope find_files<CR>", { silent = true })
 vim.keymap.set("n", "ne", "<Cmd>:Neotree<CR>", { silent = true })
