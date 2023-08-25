@@ -17,7 +17,8 @@ vim.keymap.set("n", "<leader>q", "<Cmd>bprevious<CR>", { desc = "Go to previous 
 vim.keymap.set("n", "<leader>e", "<Cmd>bnext<CR>", { desc = "Go to next buffer" })
 vim.keymap.set("n", "<leader>w", "<Cmd>bdelete<CR>", { desc = "Delete buffer" })
 
--- Plugins
+--Plugins
+vim.keymap.set("n", ";", "<Cmd>:FineCmdline<CR>", { noremap = true, silent = true })
 vim.keymap.set("n", "t", "<Cmd>:ToggleTerm direction=float<CR>", { silent = true })
 vim.keymap.set("n", "m", "<Cmd>:Telescope find_files<CR>", { silent = true })
 vim.keymap.set("n", "ne", "<Cmd>:Neotree<CR>", { silent = true })
