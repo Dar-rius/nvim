@@ -4,16 +4,21 @@ return {
 		-- Core
 		{
 			"williamboman/mason.nvim",
-			dependencies = { "WhoIsSethDaniel/mason-tool-installer.nvim" },
-			build = function()
-				pcall(vim.cmd, "MasonUpdate")
+			config = function()
+				require("mason").setup()
 			end,
 		},
+
+		{
+			"WhoIsSethDaniel/mason-tool-installer.nvim",
+		},
+
 		{
 			"VonHeikemen/lsp-zero.nvim",
 			branch = "v2.x",
 			lazy = false,
 		},
+
 		{
 			"hrsh7th/nvim-cmp",
 			dependencies = {
@@ -257,6 +262,28 @@ return {
 
 		local lspconfig = require("lspconfig")
 		lspconfig.lua_ls.setup(lsp.nvim_lua_ls())
+
+		lspconfig.rust_analyzer.setup({
+			on_attach = on_attach,
+			settings = {
+				["rust-analyzer"] = {
+					imports = {
+						granularity = {
+							group = "module",
+						},
+						prefix = "self",
+					},
+					cargo = {
+						buildScripts = {
+							enable = true,
+						},
+					},
+					procMacro = {
+						enable = true,
+					},
+				},
+			},
+		})
 
 		lspconfig.jsonls.setup({})
 		lspconfig.html.setup({})

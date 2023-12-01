@@ -22,3 +22,6 @@ vim.opt.wildignorecase = true
 vim.opt.showmatch = true
 vim.opt.ignorecase = true
 vim.opt.laststatus = 3
+vim.opt.splitbelow = true -- Cursor go on the left window when split
+vim.opt.splitright = true -- Cursor go on the right windows when split
+vim.opt.autowrite = true

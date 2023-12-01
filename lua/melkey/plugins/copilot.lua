@@ -1,44 +1,35 @@
 return {
-	{
-		"zbirenbaum/copilot.lua",
-		config = function()
-			require("copilot").setup({
-				panel = {
-					enabled = true,
-					auto_refresh = true,
-					keymap = {
-						jump_prev = "[[",
-						jump_next = "]]",
-						accept = "<CR>",
-						refresh = "gr",
-						open = "<M-CR>",
-					},
-				},
-				suggestion = {
-					enabled = true,
-					auto_trigger = true,
-					debounce = 75,
-					keymap = {
-						accept = "<leader>;",
-						next = "<leader>l",
-						prev = "<leader>k",
-						dismiss = "<C-]>",
-					},
-				},
-				filetypes = {
-					yaml = false,
-					markdown = false,
-					help = false,
-					gitcommit = false,
-					gitrebase = false,
-					hgcommit = false,
-					svn = false,
-					cvs = false,
-					["."] = false,
-				},
-				copilot_node_command = "node", -- Node version must be < 18
-				server_opts_overrides = {},
-			})
-		end,
+	"github/copilot.vim",
+	version = "1.10.2",
+	enabled = false,
+	keys = {
+		{
+			"<C-J>",
+			'copilot#Accept("<CR>")',
+			mode = "i",
+			desc = "Accept Copilot suggestion",
+			expr = true,
+			silent = true,
+			noremap = true,
+			replace_keycodes = false,
+		},
 	},
+	lazy = false,
+	config = function()
+		vim.g.copilot_no_tab_map = true
+		vim.g.copilot_filetypes = {
+			["*"] = false,
+			["javascript"] = true,
+			["javascriptreact"] = true,
+			["typescriptreact"] = true,
+			["typescript"] = true,
+			["json"] = true,
+			["rust"] = true,
+			["c"] = true,
+			["c#"] = true,
+			["c++"] = true,
+			["go"] = true,
+			["python"] = true,
+		}
+	end,
 }
