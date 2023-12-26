@@ -8,7 +8,7 @@ return {
 			light = "latte",
 			dark = "mocha",
 		},
-		transparent_background = false, -- disables setting the background color.
+		transparent_background = true, -- disables setting the background color.
 		show_end_of_buffer = false, -- shows the '~' characters after the end of buffers
 		term_colors = false, -- sets terminal colors (e.g. `g:terminal_color_0`)
 		dim_inactive = {
@@ -33,7 +33,16 @@ return {
 			types = {},
 			operators = {},
 		},
-		color_overrides = {},
+		color_overrides = {
+			all = {
+				text = "#ffffff",
+			},
+			latte = {
+				base = "#ff0000",
+				mantle = "#242424",
+				crust = "#474747",
+			},
+		},
 		custom_highlights = {},
 		integrations = {
 			cmp = true,
