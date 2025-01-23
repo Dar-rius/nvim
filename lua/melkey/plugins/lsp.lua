@@ -43,6 +43,7 @@ return {
 	config = function()
 		-- Setup functions and options to be used further down
 		local format_group = vim.api.nvim_create_augroup("LspFormatGroup", {})
+
 		local format_opts = { async = false, timeout_ms = 2500 }
 
 		local function register_fmt_keymap(name, bufnr)
