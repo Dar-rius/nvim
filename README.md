@@ -5,7 +5,7 @@ i used [melkey's configurations](https://github.com/Melkeydev/NvimConfig), which
 
 This configuration is accompanied by the plugin manager [Lazy.nvim](https://github.com/folke/lazy.nvim).
 
-![alt text](./ressources/term.png)
+![alt text](./ressources/last.png)
 
 ## How to download and configure
 
